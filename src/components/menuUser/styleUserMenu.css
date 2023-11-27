@@ -1,0 +1,62 @@
+
+.userMenu{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    position: absolute;
+    top: 4rem;
+    right:0rem;
+    padding: 1rem;
+    width: 250px;
+    border: 2px solid var(--color-title);
+    background-color: var(--color-fondo);
+    box-shadow: 0px 0px 25px var(--color-title);
+    border-radius: 15px;
+    z-index: 9;
+    color: var(--color-letras);
+    
+}
+.userMenu_group{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.userMenu_group img{
+    width: 80px;
+    height: 80px;
+}
+.userMenu_name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 0px 0px 3px var(--color-title);
+
+}
+.userMenu_email{
+    font-weight: 300;
+}
+.userMenu_favoritos{
+    text-decoration: none;
+}
+.btn-logout{
+    background-color: var(--color-title);
+    border: 1px solid var(--color-title);
+    color: var(--color-fondo);
+    transition: all ease-in-out .3s;
+}
+.btn-logout:hover{
+    background-color: transparent;
+    color: var(--color-title);
+}
+.userMenu_linkEditPerfil{
+    color: var(--color-letras);
+    font-weight: 500;
+}
+.userMenu_linkEditPerfil:hover{
+    color: var(--color-verde);
+    font-weight: 700;
+}
+@media (max-width:768px){
+    .userMenu{
+        left: -2rem;
+    }
+}

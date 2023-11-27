@@ -1,0 +1,76 @@
+.container-addBook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    width: 60%;
+}
+.addBook{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 25px;
+    color: var(--color-letras);
+    border: 1px solid var(--color-title);
+    background-color: var(--color-fondo);
+    box-shadow: 0px 0px 25px var(--color-title);
+   
+}
+.addBook h1{
+    color: var(--color-title);
+    text-shadow: 0px 0px 3px var(--color-title);
+}
+.addBook_form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex-wrap: wrap;
+    color: var(--color-title);
+}
+.form_group_addBook{
+    width: 50%;
+}
+.addBook_description{
+    width: 100%;
+}
+.ql-container{
+    height: 150px;
+}
+.btn-addBook{
+    background-color: transparent;
+    border: 1px solid var(--color-title);
+    color: var(--color-title);
+    transition: all ease-in-out .4s;
+}
+.btn-addBook:hover{
+    background-color: var(--color-title);
+    color: var(--color-fondo);
+}
+.description{
+    width: 80%;
+    height: 150px;
+}
+.description input{
+    height: 100%;
+}
+.container_form_group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    gap: 1rem;
+}
+@media (max-width:1000px){
+    .addBook{
+        width: 100%;
+    }
+    .addBook_form{
+        flex-direction: column;
+    }
+    .form_group_addBook{
+        width: 100%;
+    }
+}
