@@ -64,7 +64,8 @@ export const AuthProvider = ({ children }) => {
           photoURL: photoURL,
           email: email,
           admin:false,
-          librosPrestados:[]
+          librosPrestados:[],
+          librosDevueltos:[],
         };
 
         // Guardar los datos en Firestore

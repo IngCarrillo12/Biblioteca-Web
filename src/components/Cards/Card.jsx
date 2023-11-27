@@ -47,9 +47,22 @@ export const Card = ({ id, title, autor, description, availability, year, btnAct
       {
         btnActive&&(
       user? (
-        <button className='btn btn-card' onClick={handlePrestar}>
+        user.librosPrestados.includes(id)?(
+          <button className='btn btn-card' onClick={handlePrestar}>
           {isAvailability ? 'Prestar' : 'Devolver'}
         </button>
+        ):(
+          <>
+          {
+              !availability?(
+              ''
+                ):(
+                  <button className='btn btn-card' onClick={handlePrestar}>Prestar</button>
+                )
+          }
+          </>
+        )
+       
       ):(
         availability&&(
         <button className='btn btn-card' onClick={handlePrestar}>Prestar</button>
