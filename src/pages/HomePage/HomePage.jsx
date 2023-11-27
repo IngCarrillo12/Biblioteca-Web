@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ListCardsBooks } from '../../components/Cards/ListCardsBooks';
 import { BookContext } from '../../context/BookContext';
-import './styleHomePage.css'
+import './styleHome.css'
 export const HomePage = () => {
   const { books } = useContext(BookContext);
   const [filtradoGenero, setFiltradoGenero] = useState('');
