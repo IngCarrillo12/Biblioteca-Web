@@ -3,7 +3,7 @@ import { AuthContext } from '../../context/AuthContext'
 import { BookContext } from '../../context/BookContext'
 import { useNavigate, useParams } from 'react-router-dom'
 
-export const ViewBookPage = () => {
+export const BookPage = () => {
     const {id} = useParams()
     const navigate = useNavigate()
     const {obtenerLibroPorId, updateBook, eliminarLibro} = useContext(BookContext)

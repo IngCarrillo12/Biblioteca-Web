@@ -9,7 +9,7 @@ import RegistroPrestamosPage from './pages/RegistroPrestamos/RegistroPrestamosPa
 import { AuthContext } from './context/AuthContext';
 import { DevolucionesPage } from './pages/DevolucionesPage/DevolucionesPage';
 import { SearchBookPage } from './pages/SearchBooksPage/SearchBookPage';
-import { ViewBookPage } from './pages/viewBookPage/viewBookPage';
+import { BookPage } from './pages/BookPage/BookPage';
 
 export const AppRouter = () => {
   const { user } = useContext(AuthContext);
@@ -43,7 +43,7 @@ export const AppRouter = () => {
         <Route
           path="/viewBook/:id"
           element={
-            <ViewBookPage />
+            <BookPage />
           }
         />
       </Routes>
