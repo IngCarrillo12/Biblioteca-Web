@@ -1,6 +1,6 @@
 import {createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup ,updateProfile, onAuthStateChanged, signOut, signInWithEmailAndPassword } from "firebase/auth";
 import {doc, setDoc, getDoc, collection, onSnapshot } from "firebase/firestore";
-import { auth, db } from "../fireBase";
+import {db, auth} from "../firebase"
 import { useEffect, useState } from "react";
 import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2"
