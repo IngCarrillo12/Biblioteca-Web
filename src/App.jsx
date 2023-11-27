@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import './App.css'
-import { BookContext } from './context/BookContext';
+
 import { AuthProvider } from './context/AuthProvider'
 import { AppRouter } from './AppRouter'
 import { BookProvider } from './context/BookProvider'
