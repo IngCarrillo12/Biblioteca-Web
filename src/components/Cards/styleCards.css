@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3,1fr);
     place-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 .card{
